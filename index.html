@@ -1,349 +1,332 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="de">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.2">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
-    span.s1 {font-kerning: none}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digitale Workflows statt Luftschlösser | B2B Automatisierung &amp; Infrastruktur</title>
+<meta name="description" content="Automatisierung (n8n/KI), B2B-Marketing-Infrastruktur und Design aus einer Hand – für messbare Effizienz statt manueller Prozesse.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          bg: '#0A0B0E',
+          panel: '#12141A',
+          panelalt: '#171A21',
+          edge: '#23262E',
+          ink: '#E7E9EE',
+          dim: '#8A93A6',
+          faint: '#565C6B',
+          blue: '#35D0FF',
+          green: '#4CFFA0',
+        },
+        fontFamily: {
+          display: ['"Space Grotesk"', 'sans-serif'],
+          body: ['"Inter"', 'sans-serif'],
+          mono: ['"JetBrains Mono"', 'monospace'],
+        },
+      }
+    }
+  }
+</script>
+
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="de"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;title&gt;Digitale Workflows statt Luftschlösser | B2B Automatisierung &amp;amp; Infrastruktur&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta name="description" content="Automatisierung (n8n/KI), B2B-Marketing-Infrastruktur und Design aus einer Hand – für messbare Effizienz statt manueller Prozesse."&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</span></p>
-<p class="p1"><span class="s1">&lt;link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1">&lt;script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>tailwind.config = {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>theme: {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>extend: {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>colors: {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>bg: '#0A0B0E',</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>panel: '#12141A',</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>panelalt: '#171A21',</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>edge: '#23262E',</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>ink: '#E7E9EE',</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>dim: '#8A93A6',</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>faint: '#565C6B',</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>blue: '#35D0FF',</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>green: '#4CFFA0',</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>},</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>fontFamily: {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>display: ['"Space Grotesk"', 'sans-serif'],</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>body: ['"Inter"', 'sans-serif'],</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>mono: ['"JetBrains Mono"', 'monospace'],</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>},</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;link rel="stylesheet" href="style.css"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body class="bg-bg text-ink font-body antialiased"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div class="progress-track"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="progress-fill" id="progressFill"&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;header class="fixed top-0 inset-x-0 z-40 flex items-center justify-between px-6 md:px-10 py-4 backdrop-blur-sm bg-bg/60 border-b border-edge/60"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="flex items-center gap-2"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;span class="status-dot"&gt;&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;span class="font-mono text-xs tracking-widest text-dim uppercase"&gt;Verfügbar für Projekte&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;a href="#kontakt" class="font-mono text-xs tracking-widest uppercase text-dim hover:text-ink transition-colors link-underline"&gt;Kontakt&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/header&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;main&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- ============ HERO ============ --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section id="hero" class="hero relative min-h-screen flex items-center overflow-hidden px-6 md:px-10 pt-24 pb-16"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="bg-grid" aria-hidden="true"&gt;&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="relative z-10 w-full max-w-6xl mx-auto grid md:grid-cols-12 gap-12 items-center"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="md:col-span-7 order-2 md:order-1"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="reveal-el font-mono text-xs md:text-sm tracking-widest text-blue uppercase mb-6"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>// Automation Engineer — Hannover&lt;span class="blink-cursor"&gt;&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h1 class="reveal-el font-display font-bold leading-[1.05] tracking-tight text-[clamp(2.4rem,6vw,5rem)]"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>Ich baue digitale &lt;span class="word-flow"&gt;Workflows&lt;/span&gt;,&lt;br&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="word-muted"&gt;keine Luftschlösser.&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/h1&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="reveal-el mt-6 text-lg md:text-xl text-dim max-w-xl"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>Automatisierung (n8n/KI), B2B-Infrastruktur &amp;amp; messbare Effizienz.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="reveal-el mt-10 flex flex-wrap gap-4"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;a href="#kontakt" class="btn-primary magnetic"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span&gt;Prozesse optimieren&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span aria-hidden="true"&gt;→&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="md:col-span-5 order-1 md:order-2 flex justify-center"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="reveal-el avatar-ring"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="avatar-inner"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;img</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>src="https://cdn.prod.website-files.com/6a1db94bceb8e833098cca3d/6a79d4c8199853d9a5acd6a7_Portfolio%20Profilbild%2001.jpg"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>alt="Christian Schulz – Profilfoto"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>decoding="async"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>fetchpriority="high"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="scroll-cue" aria-hidden="true"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;span class="font-mono text-[0.65rem] tracking-[0.3em] uppercase text-faint rotate-90 origin-center block"&gt;Scroll&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;span class="scroll-line"&gt;&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- ============ PROBLEM ============ --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section id="problem" class="relative px-6 md:px-10 py-28 md:py-36 border-t border-edge/60"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="max-w-4xl mx-auto text-center"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="reveal-el font-mono text-xs md:text-sm tracking-widest text-blue uppercase mb-6"&gt;// Das Problem&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;h2 class="reveal-el font-display font-semibold text-[clamp(1.9rem,4.5vw,3.2rem)] leading-tight"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>Verlieren Sie Zeit durch manuelle Prozesse?</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="reveal-el mt-6 text-dim text-lg max-w-2xl mx-auto"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>B2B-Produkte sind oft exzellent — aber die Prozesse im Hintergrund sind veraltet.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>Daten werden manuell abgetippt, Systeme sprechen nicht miteinander, Leads versickern.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="max-w-5xl mx-auto mt-16 grid gap-6 md:grid-cols-3"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="reveal-el card-symptom"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="symptom-mark"&gt;&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3 class="font-display font-semibold text-lg mt-4"&gt;Manuelle Dateneingabe&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="text-dim text-sm mt-2 leading-relaxed"&gt;Copy-Paste zwischen Systemen, die eigentlich verbunden sein sollten.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="reveal-el card-symptom"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="symptom-mark"&gt;&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3 class="font-display font-semibold text-lg mt-4"&gt;Isolierte Systeme&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="text-dim text-sm mt-2 leading-relaxed"&gt;CRM, Formular, Postfach — jedes für sich, nichts automatisiert.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="reveal-el card-symptom"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="symptom-mark"&gt;&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3 class="font-display font-semibold text-lg mt-4"&gt;Versickernde Leads&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="text-dim text-sm mt-2 leading-relaxed"&gt;Ohne Automatisierung bleiben Anfragen liegen, bis es zu spät ist.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- ============ LÖSUNG ============ --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section id="loesung" class="relative px-6 md:px-10 py-28 md:py-36 border-t border-edge/60"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="max-w-3xl mx-auto md:mx-0 md:ml-[max(1.5rem,calc(50%-40rem))] mb-16"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="reveal-el font-mono text-xs md:text-sm tracking-widest text-blue uppercase mb-6"&gt;// Die Lösung&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;h2 class="reveal-el font-display font-semibold text-[clamp(1.9rem,4.5vw,3rem)] leading-tight"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>Drei Säulen für effiziente B2B-Prozesse</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="relative max-w-3xl mx-auto pl-14 md:pl-16"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="trace"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="trace-fill" id="traceFill"&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="pillar reveal-el"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="pillar-number"&gt;01&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;h3 class="font-display font-semibold text-xl md:text-2xl"&gt;KI &amp;amp; Automatisierung (n8n)&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p class="text-dim mt-2 leading-relaxed"&gt;Daten-Pipelines, Webhooks und LLM-Integrationen für fehlerfreie Verbindungen zwischen Ihrer Software.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="pillar reveal-el"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="pillar-number"&gt;02&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;h3 class="font-display font-semibold text-xl md:text-2xl"&gt;B2B-Marketing-Infrastruktur&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p class="text-dim mt-2 leading-relaxed"&gt;Lead-Funnels, die Anfragen ohne manuellen Aufwand direkt ins CRM leiten.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="pillar reveal-el"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="pillar-number"&gt;03&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;h3 class="font-display font-semibold text-xl md:text-2xl"&gt;Design &amp;amp; Gestaltung&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p class="text-dim mt-2 leading-relaxed"&gt;Über 10 Jahre Erfahrung für die visuelle Übersetzung komplexer Workflows auf Top-Niveau.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- ============ ÜBRIGENS (Augenzwinker-Moment) ============ --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section id="meta" class="relative px-6 md:px-10 py-16 md:py-20 border-t border-edge/60"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="max-w-3xl mx-auto"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="reveal-el meta-aside"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="font-mono text-xs tracking-widest text-blue uppercase mb-3"&gt;// Übrigens&lt;span class="blink-cursor"&gt;&lt;/span&gt;&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="font-display text-lg md:text-xl leading-relaxed text-ink"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>Ich hab nie programmieren gelernt — aber ich weiß, wie ich mit KI arbeite.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="font-body text-dim text-base mt-3 leading-relaxed"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>Diese Website hier? Komplett mit KI gebaut. Websites, Prozesse, Design — wenn ich weiß, was ich will, findet die KI den Weg dahin. 😉</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- ============ PRAXISBEISPIEL / SIGNATURE DIAGRAM ============ --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section id="usecase" class="relative px-6 md:px-10 py-28 md:py-36 border-t border-edge/60 overflow-hidden"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="max-w-3xl mx-auto text-center mb-20"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="reveal-el font-mono text-xs md:text-sm tracking-widest text-blue uppercase mb-6"&gt;// Praxisbeispiel&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;h2 class="reveal-el font-display font-semibold text-[clamp(1.9rem,4.5vw,3rem)] leading-tight"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>Vom Messekontakt zum CRM-Eintrag</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="diagramWrap" class="diagram-wrap max-w-5xl mx-auto"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="diagram-row"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="node" id="node1"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="node-glow"&gt;&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="node-dot" id="dot1"&gt;&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="font-mono text-[0.65rem] tracking-widest text-faint uppercase"&gt;Node 01&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;h3 class="font-display font-semibold mt-2"&gt;Lead-Erfassung&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p class="text-dim text-sm mt-1"&gt;Auf der Messe erfasst.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="connector"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="connector-fill" id="conn1"&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="node" id="node2"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="node-glow"&gt;&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="node-dot" id="dot2"&gt;&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="font-mono text-[0.65rem] tracking-widest text-faint uppercase"&gt;Node 02&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;h3 class="font-display font-semibold mt-2"&gt;KI-Extraktion&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p class="text-dim text-sm mt-1"&gt;Firmen-Anreicherung automatisch.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="connector"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="connector-fill" id="conn2"&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="node" id="node3"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="node-glow"&gt;&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="node-dot" id="dot3"&gt;&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="font-mono text-[0.65rem] tracking-widest text-faint uppercase"&gt;Node 03&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;h3 class="font-display font-semibold mt-2"&gt;CRM-Eintrag&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p class="text-dim text-sm mt-1"&gt;+ automatisierte Erst-E-Mail.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="stats-row"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="stat-block"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="stat-value" id="statDuration"&gt;0 Sek.&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="font-mono text-xs tracking-widest text-faint uppercase mt-2 block"&gt;Dauer&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="stat-block"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="stat-value" id="statManual"&gt;15 Min.&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="font-mono text-xs tracking-widest text-faint uppercase mt-2 block"&gt;Manueller Aufwand&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="reveal-el more-examples"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="font-mono text-xs tracking-widest text-faint uppercase mb-4 text-center"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>Die gleiche Logik lässt sich auf viele Prozesse übertragen</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="chip-row"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="chip"&gt;Event- &amp;amp; Anfragen-Management&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="chip"&gt;Onboarding-Automatisierung&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="chip"&gt;Automatisiertes Reporting&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- ============ SETUP ============ --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section id="setup" class="relative px-6 md:px-10 py-28 md:py-36 border-t border-edge/60"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="max-w-3xl mx-auto"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="reveal-el font-mono text-xs md:text-sm tracking-widest text-blue uppercase mb-6"&gt;// Das Setup&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;h2 class="reveal-el font-display font-semibold text-[clamp(1.9rem,4.5vw,3rem)] leading-tight mb-12"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>Rahmenbedingungen</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/h2&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="reveal-el terminal-panel"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="terminal-header"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="dot dot-red"&gt;&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="dot dot-yellow"&gt;&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="dot dot-green"&gt;&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="font-mono text-xs text-faint ml-3"&gt;status.sh&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="terminal-body"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="setup-row"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span class="font-mono text-sm text-dim uppercase tracking-wide"&gt;Verfügbarkeit&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span class="font-display text-ink text-right"&gt;20–25 Std./Woche &lt;span class="text-dim"&gt;(Mo–Mi)&lt;/span&gt;&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="setup-row"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span class="font-mono text-sm text-dim uppercase tracking-wide"&gt;Modell&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span class="font-display text-ink text-right"&gt;Hybrid im Raum Hannover&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="setup-row"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span class="font-mono text-sm text-dim uppercase tracking-wide"&gt;Arbeitsweise&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span class="font-display text-ink text-right"&gt;Umsetzungsstark · Lösungsorientiert · Eigenständig&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p class="font-mono text-xs text-faint mt-6"&gt;$ Homeoffice für Deep Work — vor Ort für Team &amp;amp; Strategie&lt;span class="blink-cursor"&gt;&lt;/span&gt;&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- ============ FOOTER / CTA ============ --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section id="kontakt" class="relative px-6 md:px-10 py-28 md:py-40 border-t border-edge/60 text-center overflow-hidden"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="bg-grid opacity-40" aria-hidden="true"&gt;&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="relative z-10 max-w-2xl mx-auto"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;h2 class="reveal-el font-display font-semibold text-[clamp(2rem,5vw,3.4rem)] leading-tight"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>Bereit für effizientere Prozesse?</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="reveal-el mt-6 text-dim text-lg"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>Unverbindlicher Austausch über Zeit- und Kostenersparnis für Ihr Team.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="reveal-el mt-10 flex flex-wrap gap-4 justify-center"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="mailto:christian@schulz-davinci.de" class="btn-primary magnetic"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span&gt;E-Mail schreiben&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span aria-hidden="true"&gt;→&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a href="https://www.linkedin.com/in/christian-c-schulz-bba885204" target="_blank" rel="noopener noreferrer" class="btn-secondary magnetic"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span&gt;LinkedIn&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;footer class="px-6 md:px-10 py-8 border-t border-edge/60 flex flex-col md:flex-row items-center justify-between gap-3 max-w-6xl mx-auto"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p class="font-mono text-xs text-faint"&gt;Kein Framework. Kein Bloat. Nur Code.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p class="font-mono text-xs text-faint"&gt;HTML · CSS · JS · GSAP&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/main&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"&gt;&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"&gt;&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1">&lt;script src="script.js"&gt;&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+<body class="bg-bg text-ink font-body antialiased">
+
+<div class="progress-track">
+  <div class="progress-fill" id="progressFill"></div>
+</div>
+
+<header class="fixed top-0 inset-x-0 z-40 flex items-center justify-between px-6 md:px-10 py-4 backdrop-blur-sm bg-bg/60 border-b border-edge/60">
+  <div class="flex items-center gap-2">
+    <span class="status-dot"></span>
+    <span class="font-mono text-xs tracking-widest text-dim uppercase">Verfügbar für Projekte</span>
+  </div>
+  <a href="#kontakt" class="font-mono text-xs tracking-widest uppercase text-dim hover:text-ink transition-colors link-underline">Kontakt</a>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="hero relative min-h-screen flex items-center overflow-hidden px-6 md:px-10 pt-24 pb-16">
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <div class="relative z-10 w-full max-w-6xl mx-auto grid md:grid-cols-12 gap-12 items-center">
+
+      <div class="md:col-span-7 order-2 md:order-1">
+        <p class="reveal-el font-mono text-xs md:text-sm tracking-widest text-blue uppercase mb-6">
+          // Automation Engineer — Hannover<span class="blink-cursor"></span>
+        </p>
+
+        <h1 class="reveal-el font-display font-bold leading-[1.05] tracking-tight text-[clamp(2.4rem,6vw,5rem)]">
+          Ich baue digitale <span class="word-flow">Workflows</span>,<br>
+          <span class="word-muted">keine Luftschlösser.</span>
+        </h1>
+
+        <p class="reveal-el mt-6 text-lg md:text-xl text-dim max-w-xl">
+          Automatisierung (n8n/KI), B2B-Infrastruktur &amp; messbare Effizienz.
+        </p>
+
+        <div class="reveal-el mt-10 flex flex-wrap gap-4">
+          <a href="#kontakt" class="btn-primary magnetic">
+            <span>Prozesse optimieren</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="md:col-span-5 order-1 md:order-2 flex justify-center">
+        <div class="reveal-el avatar-ring">
+          <div class="avatar-inner">
+            <img
+              src="https://cdn.prod.website-files.com/6a1db94bceb8e833098cca3d/6a79d4c8199853d9a5acd6a7_Portfolio%20Profilbild%2001.jpg"
+              alt="Christian Schulz – Profilfoto"
+              decoding="async"
+              fetchpriority="high"
+            >
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true">
+      <span class="font-mono text-[0.65rem] tracking-[0.3em] uppercase text-faint rotate-90 origin-center block">Scroll</span>
+      <span class="scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM ============ -->
+  <section id="problem" class="relative px-6 md:px-10 py-28 md:py-36 border-t border-edge/60">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="reveal-el font-mono text-xs md:text-sm tracking-widest text-blue uppercase mb-6">// Das Problem</p>
+      <h2 class="reveal-el font-display font-semibold text-[clamp(1.9rem,4.5vw,3.2rem)] leading-tight">
+        Verlieren Sie Zeit durch manuelle Prozesse?
+      </h2>
+      <p class="reveal-el mt-6 text-dim text-lg max-w-2xl mx-auto">
+        B2B-Produkte sind oft exzellent — aber die Prozesse im Hintergrund sind veraltet.
+        Daten werden manuell abgetippt, Systeme sprechen nicht miteinander, Leads versickern.
+      </p>
+    </div>
+
+    <div class="max-w-5xl mx-auto mt-16 grid gap-6 md:grid-cols-3">
+      <div class="reveal-el card-symptom">
+        <span class="symptom-mark"></span>
+        <h3 class="font-display font-semibold text-lg mt-4">Manuelle Dateneingabe</h3>
+        <p class="text-dim text-sm mt-2 leading-relaxed">Copy-Paste zwischen Systemen, die eigentlich verbunden sein sollten.</p>
+      </div>
+      <div class="reveal-el card-symptom">
+        <span class="symptom-mark"></span>
+        <h3 class="font-display font-semibold text-lg mt-4">Isolierte Systeme</h3>
+        <p class="text-dim text-sm mt-2 leading-relaxed">CRM, Formular, Postfach — jedes für sich, nichts automatisiert.</p>
+      </div>
+      <div class="reveal-el card-symptom">
+        <span class="symptom-mark"></span>
+        <h3 class="font-display font-semibold text-lg mt-4">Versickernde Leads</h3>
+        <p class="text-dim text-sm mt-2 leading-relaxed">Ohne Automatisierung bleiben Anfragen liegen, bis es zu spät ist.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LÖSUNG ============ -->
+  <section id="loesung" class="relative px-6 md:px-10 py-28 md:py-36 border-t border-edge/60">
+    <div class="max-w-3xl mx-auto md:mx-0 md:ml-[max(1.5rem,calc(50%-40rem))] mb-16">
+      <p class="reveal-el font-mono text-xs md:text-sm tracking-widest text-blue uppercase mb-6">// Die Lösung</p>
+      <h2 class="reveal-el font-display font-semibold text-[clamp(1.9rem,4.5vw,3rem)] leading-tight">
+        Drei Säulen für effiziente B2B-Prozesse
+      </h2>
+    </div>
+
+    <div class="relative max-w-3xl mx-auto pl-14 md:pl-16">
+      <div class="trace">
+        <div class="trace-fill" id="traceFill"></div>
+      </div>
+
+      <div class="pillar reveal-el">
+        <span class="pillar-number">01</span>
+        <div>
+          <h3 class="font-display font-semibold text-xl md:text-2xl">KI &amp; Automatisierung (n8n)</h3>
+          <p class="text-dim mt-2 leading-relaxed">Daten-Pipelines, Webhooks und LLM-Integrationen für fehlerfreie Verbindungen zwischen Ihrer Software.</p>
+        </div>
+      </div>
+
+      <div class="pillar reveal-el">
+        <span class="pillar-number">02</span>
+        <div>
+          <h3 class="font-display font-semibold text-xl md:text-2xl">B2B-Marketing-Infrastruktur</h3>
+          <p class="text-dim mt-2 leading-relaxed">Lead-Funnels, die Anfragen ohne manuellen Aufwand direkt ins CRM leiten.</p>
+        </div>
+      </div>
+
+      <div class="pillar reveal-el">
+        <span class="pillar-number">03</span>
+        <div>
+          <h3 class="font-display font-semibold text-xl md:text-2xl">Design &amp; Gestaltung</h3>
+          <p class="text-dim mt-2 leading-relaxed">Über 10 Jahre Erfahrung für die visuelle Übersetzung komplexer Workflows auf Top-Niveau.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ÜBRIGENS (Augenzwinker-Moment) ============ -->
+  <section id="meta" class="relative px-6 md:px-10 py-16 md:py-20 border-t border-edge/60">
+    <div class="max-w-3xl mx-auto">
+      <div class="reveal-el meta-aside">
+        <p class="font-mono text-xs tracking-widest text-blue uppercase mb-3">// Übrigens<span class="blink-cursor"></span></p>
+        <p class="font-display text-lg md:text-xl leading-relaxed text-ink">
+          Ich hab nie programmieren gelernt — aber ich weiß, wie ich mit KI arbeite.
+        </p>
+        <p class="font-body text-dim text-base mt-3 leading-relaxed">
+          Diese Website hier? Komplett mit KI gebaut. Websites, Prozesse, Design — wenn ich weiß, was ich will, findet die KI den Weg dahin. 😉
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRAXISBEISPIEL / SIGNATURE DIAGRAM ============ -->
+  <section id="usecase" class="relative px-6 md:px-10 py-28 md:py-36 border-t border-edge/60 overflow-hidden">
+    <div class="max-w-3xl mx-auto text-center mb-20">
+      <p class="reveal-el font-mono text-xs md:text-sm tracking-widest text-blue uppercase mb-6">// Praxisbeispiel</p>
+      <h2 class="reveal-el font-display font-semibold text-[clamp(1.9rem,4.5vw,3rem)] leading-tight">
+        Vom Messekontakt zum CRM-Eintrag
+      </h2>
+    </div>
+
+    <div id="diagramWrap" class="diagram-wrap max-w-5xl mx-auto">
+      <div class="diagram-row">
+
+        <div class="node" id="node1">
+          <span class="node-glow"></span>
+          <span class="node-dot" id="dot1"></span>
+          <span class="font-mono text-[0.65rem] tracking-widest text-faint uppercase">Node 01</span>
+          <h3 class="font-display font-semibold mt-2">Lead-Erfassung</h3>
+          <p class="text-dim text-sm mt-1">Auf der Messe erfasst.</p>
+        </div>
+
+        <div class="connector">
+          <div class="connector-fill" id="conn1"></div>
+        </div>
+
+        <div class="node" id="node2">
+          <span class="node-glow"></span>
+          <span class="node-dot" id="dot2"></span>
+          <span class="font-mono text-[0.65rem] tracking-widest text-faint uppercase">Node 02</span>
+          <h3 class="font-display font-semibold mt-2">KI-Extraktion</h3>
+          <p class="text-dim text-sm mt-1">Firmen-Anreicherung automatisch.</p>
+        </div>
+
+        <div class="connector">
+          <div class="connector-fill" id="conn2"></div>
+        </div>
+
+        <div class="node" id="node3">
+          <span class="node-glow"></span>
+          <span class="node-dot" id="dot3"></span>
+          <span class="font-mono text-[0.65rem] tracking-widest text-faint uppercase">Node 03</span>
+          <h3 class="font-display font-semibold mt-2">CRM-Eintrag</h3>
+          <p class="text-dim text-sm mt-1">+ automatisierte Erst-E-Mail.</p>
+        </div>
+
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-block">
+          <span class="stat-value" id="statDuration">0 Sek.</span>
+          <span class="font-mono text-xs tracking-widest text-faint uppercase mt-2 block">Dauer</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-value" id="statManual">15 Min.</span>
+          <span class="font-mono text-xs tracking-widest text-faint uppercase mt-2 block">Manueller Aufwand</span>
+        </div>
+      </div>
+
+      <div class="reveal-el more-examples">
+        <p class="font-mono text-xs tracking-widest text-faint uppercase mb-4 text-center">
+          Die gleiche Logik lässt sich auf viele Prozesse übertragen
+        </p>
+        <div class="chip-row">
+          <span class="chip">Event- &amp; Anfragen-Management</span>
+          <span class="chip">Onboarding-Automatisierung</span>
+          <span class="chip">Automatisiertes Reporting</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SETUP ============ -->
+  <section id="setup" class="relative px-6 md:px-10 py-28 md:py-36 border-t border-edge/60">
+    <div class="max-w-3xl mx-auto">
+      <p class="reveal-el font-mono text-xs md:text-sm tracking-widest text-blue uppercase mb-6">// Das Setup</p>
+      <h2 class="reveal-el font-display font-semibold text-[clamp(1.9rem,4.5vw,3rem)] leading-tight mb-12">
+        Rahmenbedingungen
+      </h2>
+
+      <div class="reveal-el terminal-panel">
+        <div class="terminal-header">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="font-mono text-xs text-faint ml-3">status.sh</span>
+        </div>
+        <div class="terminal-body">
+          <div class="setup-row">
+            <span class="font-mono text-sm text-dim uppercase tracking-wide">Verfügbarkeit</span>
+            <span class="font-display text-ink text-right">20–25 Std./Woche <span class="text-dim">(Mo–Mi)</span></span>
+          </div>
+          <div class="setup-row">
+            <span class="font-mono text-sm text-dim uppercase tracking-wide">Modell</span>
+            <span class="font-display text-ink text-right">Hybrid im Raum Hannover</span>
+          </div>
+          <div class="setup-row">
+            <span class="font-mono text-sm text-dim uppercase tracking-wide">Arbeitsweise</span>
+            <span class="font-display text-ink text-right">Umsetzungsstark · Lösungsorientiert · Eigenständig</span>
+          </div>
+          <p class="font-mono text-xs text-faint mt-6">$ Homeoffice für Deep Work — vor Ort für Team &amp; Strategie<span class="blink-cursor"></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER / CTA ============ -->
+  <section id="kontakt" class="relative px-6 md:px-10 py-28 md:py-40 border-t border-edge/60 text-center overflow-hidden">
+    <div class="bg-grid opacity-40" aria-hidden="true"></div>
+
+    <div class="relative z-10 max-w-2xl mx-auto">
+      <h2 class="reveal-el font-display font-semibold text-[clamp(2rem,5vw,3.4rem)] leading-tight">
+        Bereit für effizientere Prozesse?
+      </h2>
+      <p class="reveal-el mt-6 text-dim text-lg">
+        Unverbindlicher Austausch über Zeit- und Kostenersparnis für Ihr Team.
+      </p>
+
+      <div class="reveal-el mt-10 flex flex-wrap gap-4 justify-center">
+        <a href="mailto:christian@schulz-davinci.de" class="btn-primary magnetic">
+          <span>E-Mail schreiben</span>
+          <span aria-hidden="true">→</span>
+        </a>
+        <a href="https://www.linkedin.com/in/christian-c-schulz-bba885204" target="_blank" rel="noopener noreferrer" class="btn-secondary magnetic">
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="px-6 md:px-10 py-8 border-t border-edge/60 flex flex-col md:flex-row items-center justify-between gap-3 max-w-6xl mx-auto">
+    <p class="font-mono text-xs text-faint">Kein Framework. Kein Bloat. Nur Code.</p>
+    <p class="font-mono text-xs text-faint">HTML · CSS · JS · GSAP</p>
+  </footer>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
