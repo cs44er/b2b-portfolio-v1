@@ -256,12 +256,12 @@ body {
 }
 
 /* ============================================
-   AVATAR PLACEHOLDER
+   AVATAR (PORTRAIT-FORMAT ECHTFOTO)
    ============================================ */
 .avatar-ring {
   position: relative;
-  width: clamp(180px, 22vw, 240px);
-  aspect-ratio: 1 / 1;
+  width: clamp(200px, 26vw, 280px);
+  aspect-ratio: 3 / 4;
   border-radius: 1.75rem;
   overflow: hidden;
   padding: 3px;
@@ -282,11 +282,26 @@ body {
   width: 100%;
   background: var(--panel);
   border-radius: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem;
-  text-align: center;
+  overflow: hidden;
+}
+
+.avatar-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  display: block;
+  filter: grayscale(10%) contrast(1.05) brightness(0.95);
+}
+
+.avatar-inner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, transparent 55%, rgba(10, 11, 14, 0.55) 100%),
+    linear-gradient(160deg, rgba(53, 208, 255, 0.12), rgba(76, 255, 160, 0.08));
+  pointer-events: none;
 }
 
 @keyframes spin {
@@ -370,6 +385,17 @@ body {
 }
 
 /* ============================================
+   ÜBRIGENS / META-ASIDE
+   ============================================ */
+.meta-aside {
+  position: relative;
+  padding: 1.75rem 2rem;
+  border-left: 2px dashed var(--edge);
+  background: var(--panel);
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+
+/* ============================================
    USE CASE DIAGRAM (SIGNATURE ELEMENT)
    ============================================ */
 .diagram-wrap {
@@ -442,12 +468,6 @@ body {
   background: linear-gradient(90deg, var(--blue), var(--green));
 }
 
-@media (min-width: 768px) {
-  .connector-fill {
-    transform-origin: left;
-  }
-}
-
 .stats-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -466,6 +486,38 @@ body {
   background-clip: text;
   color: transparent;
   display: inline-block;
+}
+
+/* ============================================
+   WEITERE EINSATZGEBIETE (CHIPS)
+   ============================================ */
+.more-examples {
+  margin-top: 5rem;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.chip {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid var(--edge);
+  border-radius: 999px;
+  color: var(--dim);
+  background: var(--panel);
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.chip:hover {
+  border-color: var(--blue);
+  color: var(--ink);
 }
 
 /* ============================================
