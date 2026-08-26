@@ -317,37 +317,6 @@ body {
 }
 
 /* ============================================
-   SYMPTOM CARDS
-   ============================================ */
-.card-symptom {
-  position: relative;
-  background: var(--panel);
-  border: 1px solid var(--edge);
-  border-radius: 0.85rem;
-  padding: 1.75rem;
-  overflow: hidden;
-}
-
-.card-symptom::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--blue), var(--green));
-  opacity: 0.7;
-}
-
-.symptom-mark {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border: 1.5px solid var(--edge);
-  transform: rotate(45deg);
-}
-
-/* ============================================
    SOLUTION — TRACE LINE & PILLARS
    ============================================ */
 .trace {
@@ -562,6 +531,79 @@ body {
 .chip:hover {
   border-color: var(--blue);
   color: var(--ink);
+}
+
+/* ============================================
+   USE-CASE CARDS
+   ============================================ */
+.case-card {
+  position: relative;
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  border-radius: 0.9rem;
+  padding: 2rem 2rem 2rem 2.25rem;
+  overflow: hidden;
+}
+
+.case-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--blue), var(--green));
+  opacity: 0.75;
+}
+
+.case-index {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.case-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.15rem, 2.4vw, 1.4rem);
+  margin-top: 0.5rem;
+  color: var(--ink);
+}
+
+.case-row {
+  margin-top: 1.25rem;
+}
+
+.case-row .label {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 0.35rem;
+}
+
+.case-row p {
+  color: var(--dim);
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
+/* ============================================
+   HINTERGRUND (BIG FIGURE)
+   ============================================ */
+.bg-figure {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  background: linear-gradient(90deg, var(--blue), var(--green));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
 
 /* ============================================

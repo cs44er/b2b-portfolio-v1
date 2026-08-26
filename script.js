@@ -85,43 +85,47 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ============================================
-     PROBLEM-SECTION: STAGGERED CARD-REVEAL
+     PROBLEM/CASE-CARDS: STAGGERED REVEAL
      ============================================ */
-  const problemGrid = document.getElementById('problemGrid');
-  const problemCards = gsap.utils.toArray('.card-symptom');
+  function staggerReveal(containerId, itemSelector) {
+    const container = document.getElementById(containerId);
+    const items = gsap.utils.toArray(itemSelector);
+    if (!items.length) return;
 
-  if (problemCards.length) {
     if (reduceMotion) {
-      gsap.set(problemCards, { opacity: 1, y: 0, scale: 1 });
-    } else {
-      gsap.set(problemCards, { opacity: 0, y: 40, scale: 0.96 });
-      ScrollTrigger.create({
-        trigger: problemGrid || problemCards[0],
-        start: 'top 85%',
-        once: true,
-        onEnter: () => {
-          gsap.to(problemCards, {
-            opacity: 1,
-            y: 0,
-            scale: 1,
-            duration: 0.7,
-            stagger: 0.15,
-            ease: 'power3.out'
-          });
-        }
-      });
+      gsap.set(items, { opacity: 1, y: 0, scale: 1 });
+      return;
     }
+
+    gsap.set(items, { opacity: 0, y: 40, scale: 0.96 });
+    ScrollTrigger.create({
+      trigger: container || items[0],
+      start: 'top 85%',
+      once: true,
+      onEnter: () => {
+        gsap.to(items, {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: 0.7,
+          stagger: 0.15,
+          ease: 'power3.out'
+        });
+      }
+    });
   }
 
+  staggerReveal('casesGrid', '.case-card');
+
   /* ============================================
-     TRACE-LINE (Section: Lösung)
+     TRACE-LINE (Section: Fundament)
      ============================================ */
   if (!reduceMotion) {
     gsap.to('#traceFill', {
       scaleY: 1,
       ease: 'none',
       scrollTrigger: {
-        trigger: '#loesung',
+        trigger: '#fundament',
         start: 'top 70%',
         end: 'bottom 60%',
         scrub: 0.6
